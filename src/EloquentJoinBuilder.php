@@ -291,7 +291,7 @@ class EloquentJoinBuilder extends Builder
             } catch (\Exception $e) {
                 throw new InvalidRelationWhere();
             }
-        } elseif (in_array($method, ['withoutTrashed', 'onlyTrashed', 'withTrashed'])) {
+        } elseif (in_array($method, ['withoutTrashed', 'onlyTrashed', 'withTrashed','latest'])) {
             if ('withTrashed' == $method) {
                 //do nothing
             } elseif ('withoutTrashed' == $method) {
